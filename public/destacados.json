@@ -1,0 +1,8 @@
+{
+    "arreglos":[
+        {"titulo":"Cajita Piramide Pack 4un diseño Pawpatrol", "subtitulo":"", "tipo":"Cajita Pirámide", "tematica":"Pawpatrol", "medidas":"", "precio":"9.00", "img":"images/productos/papeleria/cajitas/piramide_2un_pawpatrol.jpg"},
+        {"titulo":"Cajita Piña Pack 2un diseño Bob Esponja", "subtitulo":"", "tipo":"Cajita Piña", "tematica":"Bob Esponja", "medidas":"", "precio":"9.60", "img":"images/productos/papeleria/cajitas/pina_2un_bobesponja.jpg"},
+        {"titulo":"Cajita Casita Pack 2un diseño Pawpatrol", "subtitulo":"", "tipo":"Cajita Casita", "tematica":"Pawpatrol", "medidas":"", "precio":"9.60", "img":"images/productos/papeleria/cajitas/casita_2un_pawpatrol.jpg"},
+        {"titulo":"Cajita Milk Pack 2un diseño Safari", "subtitulo":"", "tipo":"Cajita Milk", "tematica":"Safari", "medidas":"", "precio":"9.00", "img":"images/productos/papeleria/cajitas/milk_2un_safari.jpg"}
+    ]
+}

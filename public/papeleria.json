@@ -1,0 +1,25 @@
+{
+    "letras 3d":[
+        {"titulo":"Letra 3D Grande diseño Halloween", "subtitulo":"diseño en capas", "tipo":"Letra 3D", "tematica":"Halloween", "medidas":"Alt 20cm, Espesor 5cm", "precio":"15.00", "img":"/images/productos/papeleria/letras-3d/letra3d_01.jpg"},
+        {"titulo":"Letra 3D Grande diseño Lego", "subtitulo":"diseño en capas", "tipo":"Letra 3D", "tematica":"Lego", "medidas":"Altura 20cm - Espesor 5cm", "precio":"15.00", "img":"/images/productos/papeleria/letras-3d/20cm_lego.jpg"}
+    ],
+
+    "cajitas":[
+        {"titulo":"Cajita Milk Pack 4un diseño Lego", "subtitulo":"", "tipo":"Cajita Milk", "tematica":"Lego", "medidas":"", "precio":"18.00", "img":"images/productos/papeleria/cajitas/milk_4un_lego.jpg"},
+        {"titulo":"Cajita Milk Pack 2un diseño Rey", "subtitulo":"", "tipo":"Cajita Milk", "tematica":"Rey", "medidas":"", "precio":"9.00", "img":"images/productos/papeleria/cajitas/milk_2un_rey.jpg"},
+        {"titulo":"Cajita Milk Pack 2un diseño Safari", "subtitulo":"", "tipo":"Cajita Milk", "tematica":"Safari", "medidas":"", "precio":"9.00", "img":"images/productos/papeleria/cajitas/milk_2un_safari.jpg"},
+        {"titulo":"Cajita Lonchera Pack 2un diseño Lego", "subtitulo":"", "tipo":"Cajita Lonchera", "tematica":"Lego", "medidas":"", "precio":"9.60", "img":"images/productos/papeleria/cajitas/lonchera_2un_lego.jpg"},
+        {"titulo":"Cajita Piña Pack 2un diseño Bob Esponja", "subtitulo":"", "tipo":"Cajita Piña", "tematica":"Bob Esponja", "medidas":"", "precio":"9.60", "img":"images/productos/papeleria/cajitas/pina_2un_bobesponja.jpg"},
+        {"titulo":"Cajita Casita Pack 2un diseño Sonic", "subtitulo":"", "tipo":"Cajita Casita", "tematica":"Sonic", "medidas":"", "precio":"9.60", "img":"images/productos/papeleria/cajitas/casita_2un_sonic.jpg"},
+        {"titulo":"Cajita Casita Pack 2un diseño Pawpatrol", "subtitulo":"", "tipo":"Cajita Casita", "tematica":"Pawpatrol", "medidas":"", "precio":"9.60", "img":"images/productos/papeleria/cajitas/casita_2un_pawpatrol.jpg"},
+        {"titulo":"Cajita Piramide Pack 2un diseño Sonic", "subtitulo":"", "tipo":"Cajita Pirámide", "tematica":"Sonic", "medidas":"Altura 15cm, Base 6x6cm", "precio":"9.00", "img":"images/productos/papeleria/cajitas/piramide_2un_sonic.jpg"},
+        {"titulo":"Cajita Piramide Pack 4un diseño Safari", "subtitulo":"", "tipo":"Cajita Pirámide", "tematica":"Safari", "medidas":"", "precio":"18.00", "img":"images/productos/papeleria/cajitas/piramide_4un_safari.jpg"},
+        {"titulo":"Cajita Piramide Pack 4un diseño Pawpatrol", "subtitulo":"", "tipo":"Cajita Pirámide", "tematica":"Pawpatrol", "medidas":"", "precio":"9.00", "img":"images/productos/papeleria/cajitas/piramide_2un_pawpatrol.jpg"},
+        {"titulo":"Cajita Caramelo Pack 2un diseño Safari", "subtitulo":"", "tipo":"Cajita Caramelo", "tematica":"Safari", "medidas":"", "precio":"18.00", "img":"images/productos/papeleria/cajitas/caramelo_2un_safari.jpg"}
+    ],
+
+    "toppers":[
+        {"titulo":"Topper 3 capas Sport Boys para torta", "subtitulo":"", "tipo":"Topper de Torta", "tematica":"Sport Boys del Callao", "medidas":"Altura 20cm", "precio":"18.00", "img":"images/productos/papeleria/toppers/3capas_sportBoys.jpg"}
+    ]
+
+}

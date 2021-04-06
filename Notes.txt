@@ -1,0 +1,21 @@
+--PARA CREAR EL SWIPER .CSS
+sass sass/myswiper.scss:public/css/myswiper.css
+sass --watch sass/myswiper.scss:public/css/myswiper.css
+
+--CONVERTIR SCSS A CSS
+sass sass/mystyles.scss:public/css/mystyles.css
+
+--SASS CAMBIOS EN CALIENTE
+sass --watch sass/mystyles.scss:public/css/mystyles.css
+
+
+--PARA DESACTIVAR EL FOCUS DEL NAVBAR CUANDO SE REALIZA UN CLIC SOBRE LOS ITEMS
+--ABRIR EL ARCHIVO STYLES.CSS Y ELIMINAR LO SIGUIENTE
+
+LINEA 3236
+a.navbar-item:focus, a.navbar-item:focus-within, 
+.navbar-link:focus,
+.navbar-link:focus-within,
+
+LINEA 3426
+.navbar-item.is-hoverable:focus .navbar-dropdown, .navbar-item.is-hoverable:focus-within .navbar-dropdown,

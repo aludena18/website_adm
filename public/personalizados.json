@@ -1,0 +1,34 @@
+{
+    "copas":[
+        {"titulo":"Copa Gin con Diseño en Bolsa", "subtitulo":"", "precio":17, "img":"/images/productos/personalizados/copa-gin/copa_1.jpg"},
+        {"titulo":"Copa Gin con Diseño en Caja Decorada", "subtitulo":"", "precio":20, "img":"/images/productos/personalizados/copa-gin/copa_2.jpg"},
+        {"titulo":"Copa Gin con Diseño, Espumante 200ml en Caja Decorada", "subtitulo":"", "precio":40, "img":"/images/productos/personalizados/copa-gin/copa_3.jpg"},
+        {"titulo":"Copa Gin con Diseño, Espumante 200ml, Chocolate en Caja Decorada", "subtitulo":"", "precio":48, "img":"/images/productos/personalizados/copa-gin/copa_4.jpg"},
+        {"titulo":"Copa Balón con Diseño en Bolsa", "subtitulo":"", "precio":19, "img":"/images/productos/personalizados/copa-balon/cb01.jpg"},
+        {"titulo":"Copa Balón con Diseño en Caja Decorada", "subtitulo":"", "precio":22, "img":"/images/productos/personalizados/copa-balon/cb01.jpg"},
+        {"titulo":"Copa Balón con Diseño, Espumante 200ml en Caja Decorada", "subtitulo":"", "precio":42, "img":"/images/productos/personalizados/copa-balon/cb01.jpg"},
+        {"titulo":"Copa Balón con Diseño, Espumante 200ml, Chocolate en Caja Decorada", "subtitulo":"", "precio":50, "img":"/images/productos/personalizados/copa-balon/cb01.jpg"},
+        {"titulo":"Copa Vino con Diseño en Bolsa", "subtitulo":"", "precio":15, "img":"/images/productos/personalizados/copa-vino/cv01.jpg"},
+        {"titulo":"Copa Vino con Diseño en Caja Decorada", "subtitulo":"", "precio":18, "img":"/images/productos/personalizados/copa-vino/cv01.jpg"},
+        {"titulo":"Copa Vino con Diseño, Espumante 200ml en Caja Decorada", "subtitulo":"", "precio":38, "img":"/images/productos/personalizados/copa-vino/cv01.jpg"},
+        {"titulo":"Copa Vino con Diseño, Espumante 200ml, Chocolate en Caja Decorada", "subtitulo":"", "precio":46, "img":"/images/productos/personalizados/copa-vino/cv01.jpg"}
+    ],
+
+    "vasos":[
+        {"titulo":"Vaso Kero Kids con Diseño", "subtitulo":"", "precio":6, "img":"/images/productos/personalizados/vaso/vk01.jpg"},
+        {"titulo":"Vaso Kero Kids con Diseño, Topper y Golosinas", "subtitulo":"", "precio":20, "img":"/images/productos/personalizados/vaso/vk02.jpg"}
+    ],
+
+    "tazas":[
+        {"titulo":"Taza con Diseño Sublimado", "subtitulo":"", "precio":15, "img":"/images/productos/personalizados/tazas/tz01.jpg"},
+        {"titulo":"Taza con Diseño Sublimado, Topper y Golosinas", "subtitulo":"", "precio":20, "img":"/images/productos/personalizados/tazas/tz01.jpg"},
+        {"titulo":"Taza con Diseño Sublimado en Caja Decorada", "subtitulo":"", "precio":20, "img":"/images/productos/personalizados/tazas/tz01.jpg"}
+    ],
+
+    "botellas":[
+        {"titulo":"Botella de Pisco 500ml con Diseño en Bolsa", "subtitulo":"", "precio":30, "img":"/images/productos/personalizados/botellas/bt01.jpg"},
+        {"titulo":"Botella de Pisco 500ml con Diseño en Caja Decorada", "subtitulo":"", "precio":35, "img":"/images/productos/personalizados/botellas/bt01.jpg"}
+    ]
+
+
+}
