@@ -24,7 +24,7 @@
       productos = allProducts;
     }
   };
-  xhttp.open("GET", "/" + grupo + ".json", true);
+  xhttp.open("GET", "/" + grupo.toLowerCase() + ".json", true);
   xhttp.send(response);
 
   //if the json file open up then the products array will be one of the cases in the switch
