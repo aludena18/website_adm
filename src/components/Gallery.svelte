@@ -6,6 +6,7 @@
   let json_file = "galeria";
   let galeria = [];
   let state = false;
+  let stateShowGallery = false;
 
   let isActive = "";
   let imgSrc = "";
@@ -29,6 +30,10 @@
   xhttp.open("GET", "/" + json_file + ".json", true);
   xhttp.send();
 
+  $:if(state)setTimeout(()=>{
+    stateShowGallery = true
+  },1000)
+
   function loadMasonry() {
     console.log("load-masony");
     var elem = document.querySelector(".grid");
@@ -43,8 +48,8 @@
 <div class="title-container">
   <TituloDiv titulo="GALERIA" />
 </div>
-<div class="gallery-container">
-  <div class="waiting-container" class:hide-container={state} />
+<div class="gallery-container" class:show-container={stateShowGallery}>
+  
 
   <div class="grid">
     {#if state}
@@ -87,19 +92,13 @@
 <style>
   .gallery-container {
     position: relative;
-  }
-  .waiting-container {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: #ffffff;
-    z-index: 10;
-    opacity: 1;
-    transition: all 2.5s;
-  }
-  .hide-container {
     opacity: 0;
+    transition: all 3s;
   }
+  .show-container {
+    opacity: 1;
+  }
+  
   .grid {
     margin: auto;
   }
