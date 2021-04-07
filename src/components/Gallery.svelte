@@ -32,7 +32,7 @@
 
   $:if(state)setTimeout(()=>{
     stateShowGallery = true
-  },1000)
+  },1500)
 
   function loadMasonry() {
     console.log("load-masony");
