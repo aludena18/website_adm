@@ -81,12 +81,12 @@
     padding: 0px;
   }
   .subcategory-menu {
-    padding: 15px 0;
+    padding: 15px;
     display: flex;
     align-items: center;
   }
   .subcategory-menu-title {
-    padding: 0 10px;
+    padding-right: 10px;
   }
   a {
     text-decoration: none;

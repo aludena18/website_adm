@@ -83,11 +83,11 @@
     margin: auto;
   }
   .grid-item {
-    width: 183px;
+    width: 175px;
     text-align: center;
   }
   .grid-item img {
-    width: 175px;
+    width: 170px;
     border-radius: 20px;
   }
   .grid-item img:hover{

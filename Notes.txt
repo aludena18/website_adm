@@ -19,3 +19,27 @@ a.navbar-item:focus, a.navbar-item:focus-within,
 
 LINEA 3426
 .navbar-item.is-hoverable:focus .navbar-dropdown, .navbar-item.is-hoverable:focus-within .navbar-dropdown,
+
+
+
+RUN SVELTE APP IN SERVER PRODUCTION
+------------------------------------
+Just add the bold part to package.json
+
+"start": "sirv public --host 0.0.0.0"
+
+
+
+TO USE ROUTES WITH SVELTE, MUST ADD --single IN PACKAGE.JSON-->script-->start
+THIS IS FOR USE AS SINGLE PAGE APLICATION
+
+"start": "sirv public --single"
+
+"scripts": {
+     .....
+    "start": "sirv public -s",
+    "start:dev": "sirv public --dev -s"
+  },
+from https://www.npmjs.com/package/sirv-cli
+
+-s, --single       Serve single-page applications

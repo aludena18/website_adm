@@ -21,11 +21,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 15px 0;
+    margin: 0;
   }
   .main-tittle {
     position: absolute;
-    padding: 10px;
+    padding: 0px;
     background: #fff;
   }
   .tittle {

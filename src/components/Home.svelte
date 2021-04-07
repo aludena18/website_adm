@@ -1,9 +1,10 @@
 <script>
+	import Hero from './Hero.svelte';
 	import Footer from './Footer.svelte';
   import { onMount } from "svelte";
   import TituloDiv from "./TituloDiv.svelte";
-  import Banner from "./Banner.svelte";
   import Productos from "./products/Productos.svelte";
+
   let y;
   onMount(() => {
     y=0;
@@ -12,8 +13,11 @@
 
 <svelte:window bind:scrollY={y} />
 
+
 <div class="home-container">
-  <Banner />
+  
+  <Hero/>
+
   <div class="division-tittle">
     <TituloDiv titulo="PRODUCTOS DESTACADOS" />
   </div>
@@ -23,6 +27,6 @@
 
 <style>
   .division-tittle {
-    padding: 20px 0;
+    padding: 0;
   }
 </style>

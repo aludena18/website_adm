@@ -41,7 +41,7 @@
       spaceBetween={0}
       slidesPerView={1}
       pagination={{ clickable: true }}
-      autoplay={{ delay: 500000, disableOnInteraction: true }}
+      autoplay={{ delay: 3000, disableOnInteraction: true }}
       on:slideChange={slideChange}
       on:swiper={(e) => console.log(e.detail[0])}
     >

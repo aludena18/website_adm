@@ -218,16 +218,6 @@
     padding-right: 0;
   }
 
-  @media (max-width:768px){
-    .info-column{
-      margin-top:auto;
-      text-align: center;
-      padding-left:12px;
-    }
-    .buttons{
-      margin: 12px auto;
-    }
-  }
   @media (max-width:1024px){
     .info-column{
       padding-left:36px;
@@ -243,6 +233,16 @@
     }
     .info-container{
       font-size: 1rem;
+    }
+  }
+  @media (max-width:768px){
+    .info-column{
+      margin-top:auto;
+      text-align: center;
+      padding-left:12px;
+    }
+    .buttons{
+      margin: 12px auto;
     }
   }
 

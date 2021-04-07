@@ -24,7 +24,7 @@
       productos = allProducts;
     }
   };
-  xhttp.open("GET", "/" + grupo + ".json", true);
+  xhttp.open("GET", "/" + grupo.toLowerCase() + ".json", true);
   xhttp.send(response);
 
   //if the json file open up then the products array will be one of the cases in the switch
@@ -43,7 +43,7 @@
 
   //the number of columns will be determined of the size of the window.
   $: column_size = window.innerWidth > 768 ? "is-one-quarter" : "is-half";
-  const mediaQueryMd = window.matchMedia("(min-width: 768px)");
+  const mediaQueryMd = window.matchMedia("(min-width: 769px)");
 
   function handleResizeChange(e) {
     if (e.matches) {
@@ -82,8 +82,11 @@
 
 <style>
   .main-products-container {
-    padding: 20px 0;
+    padding: 0;
     margin: auto;
+  }
+  .is-half {
+    padding: 0;
   }
   .is-one-quarter {
     padding: 0;

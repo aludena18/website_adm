@@ -9,17 +9,14 @@
   console.log(dropdown_data);
 </script>
 
-<style>
-  main {
-    padding: 0 15px;
-  }
-
-  
-</style>
-
-<main>
-  <Breadcrumb {breadcrumb_data}/>
+<div class="menu-container">
+  <Breadcrumb {breadcrumb_data} />
   <hr class="margin-none" />
-  <Dropdown {dropdown_data} {breadcrumb_data}/>
-</main>
+  <Dropdown {dropdown_data} {breadcrumb_data} />
+</div>
 
+<style>
+  .menu-container{
+    padding: 0;
+  }
+</style>

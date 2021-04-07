@@ -15,9 +15,9 @@
   }
 </script>
 
-<div class="main-item-container">
+<div class="main-item-container" on:click={modalActive}>
   <div class="item-image">
-    <img on:click={modalActive} alt="imagen" src={img} />
+    <img alt="imagen" src={img} />
   </div>
   <div class="item-description">
     <div class="item-titulo">
@@ -40,21 +40,24 @@
           isShown = "";
         }}
         class="delete"
-        aria-label="close"></button
-      >
+        aria-label="close"
+      />
     </header>
-    <section class="modal-card-body columns">
+    <section class="modal-card-body columns modal-card-container">
       <div class="column is-half-desktop is-full-mobile">
         <img src={img} alt="" />
       </div>
-      <div class="column alg-modal-description">
-        <h1 class="title is-3">{titulo}</h1>
-        <h5 class="subtitle is-5">{medidas}</h5>
-        <h3 class="subtitle is-3"><strong>S/ {precio}</strong></h3>
-        <h5 class="subtitle is-5">Este artículo decorativo tipo {tipo} {tematica},
-                                  esta hecho en finas cartulinas de alto gramaje y papel fotográfico
-                                  brillante en capas.
-        </h5>
+      <div class="column">
+        <div class="column-info">
+          <h1 class="title">{titulo}</h1>
+          <h5 class="subtitle is-spaced">{medidas}</h5>
+          <h3 class="title is-spaced"><strong>S/ {precio}</strong></h3>
+          <h5 class="subtitle">
+            Este artículo decorativo tipo {tipo}
+            {tematica}, esta hecho en finas cartulinas de alto gramaje y papel
+            fotográfico brillante en capas.
+          </h5>
+        </div>
       </div>
     </section>
   </div>
@@ -65,7 +68,7 @@
     padding: 5px;
   }
   .item-image {
-    padding: 5px;
+    padding: 0;
     height: 192px;
   }
   img {
@@ -93,15 +96,19 @@
     font-size: 19px;
   }
   .modal {
-    z-index: 1000;
+    z-index: 100;
     text-align: center;
   }
-  .modal .column{
+  .modal .columns {
+    margin: auto;
+  }
+  .modal .columns .column {
     padding: 0;
   }
-  .alg-modal-description{
-    margin: 30px;
+  .column-info {
     text-align: left;
+    padding-left: 20px;
+    padding-right: 0px;
   }
   .alg-is-large {
     width: 80vw;
@@ -111,7 +118,14 @@
   .is-shown {
     height: 80vh;
   }
-
+  @media (max-width: 1024px) {
+    .title {
+      font-size: 1.5rem;
+    }
+    .subtitle {
+      font-size: 1.15rem;
+    }
+  }
   @media (max-width: 768px) {
     .item-image {
       height: 150px;
@@ -123,8 +137,22 @@
       font-size: 15px;
       line-height: 20px;
     }
-    .modal img{
+    .modal img {
       height: 40vh;
+    }
+    .title {
+      font-size: 1.25rem;
+    }
+    .subtitle {
+      font-size: 1rem;
+    }
+    .modal-card-container {
+      padding: 0;
+    }
+    .column-info {
+      text-align: left;
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 </style>

@@ -29,7 +29,7 @@
 
   let shadow = "";
   function handleScroll() {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 0) {
       shadow = "border-shadow";
     } else shadow = "";
   }
