@@ -1,5 +1,5 @@
 <script>
-	import SecondaryFooter from './SecondaryFooter.svelte';
+  import SecondaryFooter from "./SecondaryFooter.svelte";
   import TituloDiv from "./TituloDiv.svelte";
   import Masonry from "masonry-layout";
 
@@ -40,8 +40,12 @@
   }
 </script>
 
-<div class="gallery-container">
+<div class="title-container">
   <TituloDiv titulo="GALERIA" />
+</div>
+<div class="gallery-container">
+  <div class="waiting-container" class:hide-container={state} />
+
   <div class="grid">
     {#if state}
       {#each galeria as arrayGal}
@@ -60,24 +64,41 @@
   </div>
 
   <div class="modal {isActive}">
-    <div class="modal-background"></div>
+    <div class="modal-background" />
     <div class="modal-content">
       <div class="image is-4by3">
-        <img src="{imgSrc}" alt="">
+        <img src={imgSrc} alt="" />
       </div>
     </div>
-    <button class="modal-close is-large" aria-label="close" on:click={() => {isActive = "";}}></button>
+    <button
+      class="modal-close is-large"
+      aria-label="close"
+      on:click={() => {
+        isActive = "";
+      }}
+    />
   </div>
 
-  <br>
-  <br>
-  <SecondaryFooter/>
-
+  <br />
+  <br />
+  <SecondaryFooter />
 </div>
 
 <style>
-  .gallery-container{
-    margin-bottom: 100px;
+  .gallery-container {
+    position: relative;
+  }
+  .waiting-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 10;
+    opacity: 1;
+    transition: all 2.5s;
+  }
+  .hide-container {
+    opacity: 0;
   }
   .grid {
     margin: auto;
@@ -90,14 +111,13 @@
     width: 170px;
     border-radius: 20px;
   }
-  .grid-item img:hover{
+  .grid-item img:hover {
     cursor: pointer;
   }
   .modal {
     z-index: 1000;
   }
-  .image{
+  .image {
     text-align: center;
   }
- 
 </style>
