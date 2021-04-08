@@ -29,16 +29,13 @@
   <div class="banner-container">
     <div class="columns is-multiline">
       <div class:move={moveState} class="column is-half-desktop is-full-mobile logo-left-column">
-        <img style="transform:translateY({y * 0.7}px);opacity:{1 -
-          Math.max(0, y / 450)}" src="images/adm.svg" alt="">
+        <img style="opacity:{1 - Math.max(0, y / 450)}" src="images/adm.svg" alt="">
       </div>
       <div class:move={moveState} class="column is-half-desktop is-full-mobile logo-right-column">
-        <img style="transform:translateY({y * 0.7}px);opacity:{1 -
-          Math.max(0, y / 450)}" src="images/fiestas.svg" alt="">
+        <img style="opacity:{1 - Math.max(0, y / 450)}" src="images/fiestas.svg" alt="">
       </div>
       <div class:move={moveState} class="column is-full logo-down-column">
-        <img style="transform:translateY({y * 0.85}px);opacity:{1 -
-          Math.max(0, y / 400)}" src="images/disenos.svg" alt="">
+        <img style="opacity:{1 - Math.max(0, y / 400)}" src="images/disenos.svg" alt="">
       </div>
     </div>
   </div>
@@ -50,10 +47,9 @@
           <h3>Historia</h3>
           <p>
             Este emprendimiento nació cuando celebramos el primer año de nuestro
-            pequeño, donde quisimos hacer una fiesta especial con hermosos
-            detalles para nuestra mesa. En ese momento realizamos algunos arreglos
-            báicos en papelería, y posteriormente decidimos profundizar en el
-            bonito mundo del cratf en papel. Ahora podemos ofrecer nuestro trabajo
+            pequeño, donde hicimos una fiesta con hermosos
+            detalles en papelería para nuestra mesa. Entonces decidimos profundizar
+            este arte del cratf en papel y ahora podemos ofrecer nuestro trabajo
             con la experiencia adquirida.
           </p>
         </div>
@@ -62,12 +58,10 @@
         <div class="content block">
           <h3>Quienes somos?</h3>
           <p>
-            Somo unas pareja que busca brindar un producto de calidad, hechos con
-            el mayor esmero y dedicación para satisfacción de nuestros clientes, y
-            así puedan tener un lindo recuerdo de sus celebraciones. Todos
+            Somo unas pareja que busca brindar productos de calidad, hechos con
+            el mayor esmero y dedicación para satisfacción de nuestros clientes. Todos
             nuestros diseños son personalizados y contamos con diversas temáticas.
-            Puedes ver los trabajos que realizamos en la galeria. Gracias por
-            visitar nuestra web.
+            Gracias por visitar nuestra web.
           </p>
         </div>
       </div>
@@ -254,9 +248,9 @@
 
 <style>
   .banner-container{
-    height:80vh;
-    margin-top:5vh;
+    height:auto;
     overflow-y: hidden;
+    margin: 25px 0;
   }
   .columns{
     margin: auto;
@@ -332,28 +326,34 @@
       transform: rotateY(-35deg);
     }
   }
-  @media (max-width: 768px) {
-    .logo-left-column {
-      height: 150px;
-      text-align: center;
-    }
-    .logo-right-column {
-      height: 150px;
-      text-align: center;
-    }
-    .info-container{
-      line-height: auto;
-    }
-    svg{
-    transform: translateX(-40vw);
-    }
-  }
   @media (max-width:1024px){
     .logo-left-column {
       height: 170px;
     }
     .logo-right-column {
       height: 170px;
+    }
+  }
+  @media (max-width: 768px) {
+    .logo-left-column {
+      height: 100px;
+      padding: 0;
+      text-align: center;
+    }
+    .logo-right-column {
+      height: 100px;
+      padding: 0;
+      text-align: center;
+    }
+    .logo-down-column{
+      height: 60px;
+      padding: 12px 0;
+    }
+    .info-container{
+      line-height: 30px;
+    }
+    svg{
+    transform: translateX(-40vw);
     }
   }
 </style>

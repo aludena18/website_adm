@@ -17,7 +17,7 @@
 
 <style>
   .main-div {
-    height: 60px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,7 +32,7 @@
     padding: 10px;
   }
   .tittle h1 {
-    font-size: 0.75rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: #484848;
   }
@@ -44,9 +44,12 @@
     height: 1px;
     background-color: #ccc;
   }
-  @media (min-width: 769px) {
+  @media (max-width: 768px) {
+    .main-div {
+      height: 60px;
+    }
     .tittle h1 {
-      font-size: 1.25rem;
+      font-size: 0.75rem;
     }
   }
 </style>
