@@ -65,6 +65,7 @@
                 titulo={midata.titulo}
                 subtitulo={midata.subtitulo}
                 img={midata.img}
+                cantidad={midata.cantidad}
                 precio={midata.precio}
                 tipo={midata.tipo}
                 tematica={midata.tematica}

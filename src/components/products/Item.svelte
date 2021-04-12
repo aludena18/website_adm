@@ -2,6 +2,7 @@
   export let titulo = "titulo";
   export let subtitulo = "subtitulo";
   export let img = "/";
+  export let cantidad = "1"
   export let precio = "0";
   export let tipo = "Artículo";
   export let tematica = "Varios";
@@ -13,6 +14,10 @@
     isActive = "is-active";
     isShown = "is-shown";
   }
+
+  let quantities = [1,2,3,4,5,6,8,10,12]
+  let selected
+  $: console.log(selected)
 </script>
 
 <div class="main-item-container" on:click={modalActive}>
@@ -50,13 +55,18 @@
       <div class="column">
         <div class="column-info">
           <h1 class="title">{titulo}</h1>
-          <h5 class="subtitle is-spaced">{medidas}</h5>
-          <h3 class="title is-spaced"><strong>S/ {precio}</strong></h3>
-          <h5 class="subtitle">
-            Este artículo decorativo tipo {tipo}
-            {tematica}, esta hecho en finas cartulinas de alto gramaje y papel
-            fotográfico brillante en capas.
-          </h5>
+          <p class="subtitle">{medidas}</p>
+          <p class="title">S/ {precio}</p>
+          <div class="precio-packs">
+            <p class="subtitle">Precio por </p>
+            <select bind:value={selected}>
+              {#each quantities as quantity}
+                <option value={quantity}>{quantity}</option>
+              {/each}
+              </select>
+            <p class="subtitle">{selected===1?'unidad':'unidades'}</p>
+            </div>
+            <p class="title">S/ {((Number(precio)/Number(cantidad))*selected).toFixed(2)}</p>
         </div>
       </div>
     </section>
@@ -117,6 +127,32 @@
   }
   .is-shown {
     height: 80vh;
+  }
+  .precio-packs{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+  }
+  select{
+    padding: 0;
+    margin: 0 5px;
+    height: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    text-decoration: none;
+  }
+  option{
+    
+  }
+  p.title{
+    margin: 0;
+    padding-top: 5px;
+  }
+  .title{
+    margin: 0;
+  }
+  .subtitle{
+    margin: 0;
   }
   @media (max-width: 1024px) {
     .title {

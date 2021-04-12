@@ -1,8 +1,44 @@
 {
-    "arreglos":[
-        {"titulo":"Cajita Piramide Pack 4un diseño Pawpatrol", "subtitulo":"", "tipo":"Cajita Pirámide", "tematica":"Pawpatrol", "medidas":"Medidas", "precio":"9.00", "img":"images/productos/papeleria/cajitas/piramide_2un_pawpatrol.jpg"},
-        {"titulo":"Cajita Piña Pack 2un diseño Bob Esponja", "subtitulo":"", "tipo":"Cajita Piña", "tematica":"Bob Esponja", "medidas":"Medidas", "precio":"9.60", "img":"images/productos/papeleria/cajitas/pina_2un_bobesponja.jpg"},
-        {"titulo":"Cajita Casita Pack 2un diseño Pawpatrol", "subtitulo":"", "tipo":"Cajita Casita", "tematica":"Pawpatrol", "medidas":"Medidas", "precio":"9.60", "img":"images/productos/papeleria/cajitas/casita_2un_pawpatrol.jpg"},
-        {"titulo":"Cajita Milk Pack 2un diseño Safari", "subtitulo":"", "tipo":"Cajita Milk", "tematica":"Safari", "medidas":"Medidas", "precio":"9.00", "img":"images/productos/papeleria/cajitas/milk_2un_safari.jpg"}
+    "arreglos": [
+        {
+            "titulo": "Cajita Milk Pack 4und diseño Lego",
+            "subtitulo": "",
+            "tipo": "Cajita Milk",
+            "tematica": "Lego",
+            "medidas": "Medidas",
+            "cantidad": "4",
+            "precio": "18.00",
+            "img": "images/productos/papeleria/cajitas/milk_4un_lego.jpg"
+        },
+        {
+            "titulo": "Cajita Milk Pack 2und diseño Rey",
+            "subtitulo": "",
+            "tipo": "Cajita Milk",
+            "tematica": "Rey",
+            "medidas": "Medidas",
+            "cantidad": "2",
+            "precio": "9.00",
+            "img": "images/productos/papeleria/cajitas/milk_2un_rey.jpg"
+        },
+        {
+            "titulo": "Cajita Milk Pack 2und diseño Safari",
+            "subtitulo": "",
+            "tipo": "Cajita Milk",
+            "tematica": "Safari",
+            "medidas": "Medidas",
+            "cantidad": "2",
+            "precio": "9.00",
+            "img": "images/productos/papeleria/cajitas/milk_2un_safari.jpg"
+        },
+        {
+            "titulo": "Cajita Lonchera Pack 2und diseño Lego",
+            "subtitulo": "",
+            "tipo": "Cajita Lonchera",
+            "tematica": "Lego",
+            "medidas": "Medidas",
+            "cantidad": "2",
+            "precio": "9.60",
+            "img": "images/productos/papeleria/cajitas/lonchera_2un_lego.jpg"
+        }
     ]
 }

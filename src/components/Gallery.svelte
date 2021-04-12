@@ -1,26 +1,24 @@
 <script>
-	import { onMount } from 'svelte';
+  import { onMount } from "svelte";
   import SecondaryFooter from "./SecondaryFooter.svelte";
   import TituloDiv from "./TituloDiv.svelte";
   import Masonry from "masonry-layout";
 
+  const SPINNER_LOADING_TIME = 2500;
+
   let json_file = "galeria";
   let galeria = [];
+  let galeriaLen;
   let state = false;
   let stateShowGallery = false;
 
-  let isActive = "";
-  let imgSrc = "";
+  let modalStates = [];
+
   let y;
 
-  function modalActive(iSrc) {
-    isActive = "is-active";
-    imgSrc = iSrc;
-  }
-
-  onMount(()=>{
-    y=0;
-  })
+  onMount(() => {
+    y = 0;
+  });
 
   //open json file with the name of the group
   let response;
@@ -30,17 +28,22 @@
       var respuesta = JSON.parse(xhttp.responseText);
       response = respuesta;
       galeria = [response.galeria];
-      console.log(galeria);
+      galeriaLen = Object.keys(galeria[0]).length;
+      for (let i = 0; i < galeriaLen; i++) {
+        modalStates[i] = { id: i, state: "" };
+      }
       state = true;
     }
   };
   xhttp.open("GET", "/" + json_file + ".json", true);
   xhttp.send();
 
-  $: if (state)
+  $: if (state) {
+    //console.log(modalStates);
     setTimeout(() => {
       stateShowGallery = true;
-    }, 1500);
+    }, SPINNER_LOADING_TIME);
+  }
 
   function loadMasonry() {
     console.log("load-masony");
@@ -53,7 +56,7 @@
   }
 </script>
 
-<svelte:window bind:scrollY={y}/>
+<svelte:window bind:scrollY={y} />
 
 <div class="title-container">
   <TituloDiv titulo="GALERIA" />
@@ -61,7 +64,7 @@
 <div class="gallery-main-container">
   <div class="gallery-back-container">
     <div class="icon" class:hide-icon={stateShowGallery}>
-      <i class="fas fa-spinner"></i>
+      <i class="fas fa-spinner" />
     </div>
   </div>
   <div class="gallery-container" class:show-container={stateShowGallery}>
@@ -72,30 +75,32 @@
             <div class="grid-item">
               <img
                 on:load={loadMasonry}
-                on:click={modalActive(imageGallery.img)}
+                on:click={() => {
+                  modalStates[i].state = "is-active";
+                }}
                 src={imageGallery.img}
                 alt="imagen"
+                id={i}
+              />
+            </div>
+            <div class="modal {modalStates[i].state}">
+              <div class="modal-background" />
+              <div class="modal-content">
+                <div class="image">
+                  <img class="modal-img" src={imageGallery.img} alt="" />
+                </div>
+              </div>
+              <button
+                on:click={() => {
+                  modalStates[i].state = "";
+                }}
+                class="modal-close is-large"
+                aria-label="close"
               />
             </div>
           {/each}
         {/each}
       {/if}
-    </div>
-
-    <div class="modal {isActive}">
-      <div class="modal-background" />
-      <div class="modal-content">
-        <div class="image is-4by3">
-          <img src={imgSrc} alt="" />
-        </div>
-      </div>
-      <button
-        class="modal-close is-large"
-        aria-label="close"
-        on:click={() => {
-          isActive = "";
-        }}
-      />
     </div>
 
     <br />
@@ -124,14 +129,16 @@
     top: 25%;
     left: 50%;
     font-size: 30px;
-    color:#f5989d;
+    color: #f5989d;
     animation: rotate-icon 2s linear infinite;
   }
-  .hide-icon{
+  .hide-icon {
     display: none;
   }
   @keyframes rotate-icon {
-    100%{transform:rotate(1turn)};
+    100% {
+      transform: rotate(1turn);
+    }
   }
   .show-container {
     opacity: 1;
@@ -154,11 +161,25 @@
   .modal {
     z-index: 1000;
   }
-  .image {
-    text-align: center;
+  .modal-content{
+    border-radius: 8px;
+    height:100%;
+    width:100%;
   }
-  @media (max-width:768px){
-    .icon{
+  .image {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+  }
+  .modal-img{
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  @media (max-width: 768px) {
+    .icon {
       font-size: 25px;
     }
   }
