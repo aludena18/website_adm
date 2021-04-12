@@ -1,5 +1,4 @@
 <script>
-	import MasonryGallery from './../MasonryGallery.svelte';
   import Gallery from "../Gallery.svelte";
   import About from "./../About.svelte";
   import Contact from "../Contact.svelte";
